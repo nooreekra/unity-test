@@ -1,6 +1,6 @@
 import React from "react";
 import { ReactComponent as Scissors } from "./assets/scissors.svg";
-import { ReactComponent as Hero } from "./assets/hero.svg";
+import hero from "./assets/hero.png";
 
 import formPayments from "./assets/formPayments.png";
 
@@ -17,16 +17,18 @@ const Payment = () => {
         </h2>
         <div className="flex">
           <div className="hero-shadow">
-            <Hero />
+            <img src={hero} alt="hero" />
           </div>
           <div className="flex flex-col justify-around items-center">
             <div className="flex justify-center items-center rounded-xl bg-dark-blue w-96 h-28">
               <p className="text-center text-white">
                 <span className="font-semibold">Update:</span> Only 14 Bottles
-                Still Available. Current Availability:{" "}
-                <div className="rectangle" />
-                <span className="font-semibold">LOW.</span> Sell-Out Risk:{" "}
-                <span className="font-semibold">HIGH</span>
+                Still Available. Current Availability:
+                <div className="rectangle w-16 h-2 inline-block mx-2" />
+                <span className="font-semibold">LOW.</span>
+                <br />
+                Sell-Out Risk:
+                <span className="font-semibold"> HIGH</span>
               </p>
             </div>
             <button className="flex items-center justify-center bg-red text-white rounded-3xl w-96 h-36 shadow-button">

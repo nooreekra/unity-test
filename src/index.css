@@ -17,8 +17,16 @@ body {
   font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
+h1 {
+  font-size: 36px;
+}
+
 h2 {
   font-size: 26px;
+}
+
+p {
+  font-size: 16px;
 }
 
 .bg-secondary {
@@ -47,7 +55,5 @@ h2 {
 }
 
 .rectangle {
-  width: 60px;
-  height: 10px;
   background: linear-gradient(to right, #536D4D 25%, #fff 30%);
 }
