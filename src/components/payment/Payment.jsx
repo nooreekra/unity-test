@@ -13,7 +13,7 @@ const Payment = () => {
         <div className="flex justify-center">
           <Scissors />
         </div>
-        <h2 className="text-white text-center font-bold">
+        <h2 className="text-white text-center font-bold md:text-[26px] text-[22px]">
           Update: Limited Time Offer For Our Readers! Promotion Ends: <br />{" "}
           Wednesday, October 18, 2023
         </h2>
@@ -22,9 +22,9 @@ const Payment = () => {
             <img src={hero} alt="hero" className="max-w-[350px]" />
           </div>
           <div className="flex flex-col justify-between items-center md:mt-10 space-y-6">
-            <div className="flex justify-center items-center rounded-xl bg-dark-blue w-[432px] h-28 px-12 py-6">
-              <p className="text-center text-white">
-                <span className="font-semibold">Update:</span> Only 14 Bottles
+            <div className="flex justify-center items-center rounded-xl bg-dark-blue md:w-[432px] w-[244px] md:h-28 md:px-12 md:py-6 px-2 py-2">
+              <p className="text-center text-white md:text-[18px] text-[12px]">
+                <span className="md:text-[18px] font-semibold text-[12px]">Update:</span> Only 14 Bottles
                 Still Available. Current Availability:
                 <div
                   className={clsx(
@@ -32,10 +32,10 @@ const Payment = () => {
                     "w-16 h-2 inline-block mx-2"
                   )}
                 />
-                <span className="font-semibold">LOW.</span>
+                <span className="md:text-[18px] font-semibold text-[12px]">LOW.</span>
                 <br />
                 Sell-Out Risk:
-                <span className="font-semibold"> HIGH</span>
+                <span className="md:text-[18px] font-semibold text-[12px]"> HIGH</span>
               </p>
             </div>
             <div className={clsx(styles.hero, "md:hidden")}>
@@ -43,7 +43,7 @@ const Payment = () => {
             </div>
             <button
               className={clsx(
-                "flex w-[432px] h-[132px] items-center justify-center bg-red text-white rounded-3xl",
+                "flex md:w-[432px] w-[300px] md:h-[132px] h-[92px] items-center justify-center bg-red text-white rounded-3xl",
                 styles.shadowButton
               )}
             >
@@ -54,7 +54,7 @@ const Payment = () => {
                   styles.shadowLink
                 )}
               >
-                <p className="text-[32px] font-bold pl-5 leading-8">
+                <p className="md:text-[32px] text-[22px] font-bold pl-5 leading-8">
                   GET A RISK-FREE SAMPLE TODAY!
                 </p>
                 <div className={styles.arrow}>
@@ -64,10 +64,10 @@ const Payment = () => {
                 </div>
               </a>
             </button>
-            <p className="text-[32px] text-white italic font-bold">
+            <p className="md:text-[32px] text-[22px] text-white italic font-bold">
               FREE SHIPPING!
             </p>
-            <img src={formPayments} alt="FormPayments" className="w-[520px]" />
+            <img src={formPayments} alt="FormPayments" className="md:w-[520px] w-[314px]" />
           </div>
         </div>
       </div>

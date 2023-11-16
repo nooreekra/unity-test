@@ -1,5 +1,5 @@
 .payment {
-    background: #536D4D;
+  background: #536d4d;
 }
 
 .shadowButton {
@@ -11,7 +11,7 @@
 }
 
 .hero {
-  background: radial-gradient(50% 50% at 50% 50%, #FFF 0%, #536D4D 100%);
+  background: radial-gradient(50% 50% at 50% 50%, #fff 0%, #536d4d 100%);
 }
 
 .rectangle {
@@ -19,55 +19,59 @@
 }
 
 .arrow {
-    transform: rotate(90deg);
-    position: relative;
-    cursor: pointer;
-    width: 150px;
-    margin-right: 24px;
+  transform: rotate(90deg);
+  position: relative;
+  cursor: pointer;
+  width: 150px;
+  margin-right: 24px;
 }
 
 .arrow span {
-    display: block;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    width: 25px;
-    height: 25px;
-    border-top: 5px solid #FFDD76;
-    border-left: 5px solid #FFDD76;
-    transform: rotate(45deg);
-    margin: -10px;
-    animation: animate 2s infinite;
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 25px;
+  height: 25px;
+  border-top: 5px solid #ffdd76;
+  border-left: 5px solid #ffdd76;
+  transform: rotate(45deg);
+  margin: -10px;
+  animation: animate 2s infinite;
 }
 
 .arrow span:nth-child(2) {
-    animation-delay: -0.2s;
+  animation-delay: -0.2s;
 }
 
 .arrow span:nth-child(3) {
-    animation-delay: -0.4s;
+  animation-delay: -0.4s;
 }
 
 @keyframes animate {
-    0% {
-        opacity: 0;
-        transform: rotate(45deg) translate(20px, 20px);
-    }
-    50% {
-        opacity: 1;
-    }
-    100% {
-        opacity: 0;
-        transform: rotate(45deg) translate(-20px, -20px);
-    }
+  0% {
+    opacity: 0;
+    transform: rotate(45deg) translate(20px, 20px);
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    transform: rotate(45deg) translate(-20px, -20px);
+  }
 }
 
 @media only screen and (max-width: 1024px) {
-    .payment {
-        background: radial-gradient(50% 50% at 50% 50%, #FFF 0%, #536D4D 100%);
-    }
-
-    .hero {
-        background: none;
-      }
+  .payment {
+    background: radial-gradient(50% 50% at 50% 50%, #fff 0%, #536d4d 100%);
   }
+
+  .hero {
+    background: none;
+  }
+
+  .arrow {
+    width: 80px;
+  }
+}

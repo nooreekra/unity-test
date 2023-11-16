@@ -116,11 +116,11 @@ const ProductionInfoModile = () => {
         alt="FormPayments"
         className="absolute z-0 top-14 w-[700px]"
       />
-      <h1 className="font-bold z-10">
+      <h1 className="font-bold z-20">
         Lorem ipsum dolor sit amet consectetur.
       </h1>
-      <div className="flex h-full w-full justify-center items-center z-10 mt-6">
-        <div className="flex flex-col justify-center items-center h-full space-y-6">
+      <div className="flex h-full w-full justify-center items-center mt-6">
+        <div className="flex flex-col justify-center z-20 items-center h-full space-y-6">
           {STRUCTURE.map((elem) => (
             <Description
               name={elem.name}
@@ -131,7 +131,7 @@ const ProductionInfoModile = () => {
             />
           ))}
         </div>
-        <div className="absolute right-[-140px]">
+        <div className="absolute z-10 right-[-140px]">
           <div className={styles.imageContainer}>
             <img src={herobg} alt="herobg" className={styles.herobg} />
             <img
