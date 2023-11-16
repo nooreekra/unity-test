@@ -1,13 +1,13 @@
 import React from "react";
-import Products from "./products/Products";
 import ProductsTable from "./productsTable/ProductsTable";
 
 const Advantages = () => {
   return (
-    <div className="flex items-center flex-col relative">
+    <div className="content-wrapper mx-auto flex flex-col relative w-full">
       <h1 className="font-bold">Lorem ipsum dolor sit amet consectetur.</h1>
-      <Products />
+      <div className="mt-12">
       <ProductsTable />
+      </div>
     </div>
   );
 };

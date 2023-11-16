@@ -1,0 +1,29 @@
+.description {
+  display: flex;
+  position: relative;
+  min-width: 220px;
+  max-width: 256px;
+  border-radius: 9px;
+  border: 1px solid #133d24;
+  background: linear-gradient(
+    180deg,
+    #dfdfdf 0%,
+    rgba(255, 255, 255, 0.99) 100%
+  );
+}
+
+.fullDescription {
+  width: 90%;
+  padding: 10px 8px 10px 14px;
+  position: absolute;
+  border-radius: 9px;
+  border: 1px solid #133d24;
+  background: linear-gradient(
+    180deg,
+    #dfdfdf 0%,
+    rgba(255, 255, 255, 0.99) 100%
+  );
+  top: 10%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}

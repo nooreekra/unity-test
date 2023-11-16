@@ -1,0 +1,73 @@
+.payment {
+    background: #536D4D;
+}
+
+.shadowButton {
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.shadowLink {
+  box-shadow: inset 0px 0px 12px -1px black;
+}
+
+.hero {
+  background: radial-gradient(50% 50% at 50% 50%, #FFF 0%, #536D4D 100%);
+}
+
+.rectangle {
+  background: linear-gradient(to right, #536d4d 25%, #fff 30%);
+}
+
+.arrow {
+    transform: rotate(90deg);
+    position: relative;
+    cursor: pointer;
+    width: 150px;
+    margin-right: 24px;
+}
+
+.arrow span {
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 25px;
+    height: 25px;
+    border-top: 5px solid #FFDD76;
+    border-left: 5px solid #FFDD76;
+    transform: rotate(45deg);
+    margin: -10px;
+    animation: animate 2s infinite;
+}
+
+.arrow span:nth-child(2) {
+    animation-delay: -0.2s;
+}
+
+.arrow span:nth-child(3) {
+    animation-delay: -0.4s;
+}
+
+@keyframes animate {
+    0% {
+        opacity: 0;
+        transform: rotate(45deg) translate(20px, 20px);
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+        transform: rotate(45deg) translate(-20px, -20px);
+    }
+}
+
+@media only screen and (max-width: 1024px) {
+    .payment {
+        background: radial-gradient(50% 50% at 50% 50%, #FFF 0%, #536D4D 100%);
+    }
+
+    .hero {
+        background: none;
+      }
+  }

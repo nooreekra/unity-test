@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 @font-face {
-  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-family: Georgia, "Times New Roman", Times, serif;
   src: url(../public/assets/fonts/georgia.ttf);
 }
 
@@ -14,7 +14,7 @@
 }
 
 body {
-  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-family: Georgia, "Times New Roman", Times, serif;
 }
 
 h1 {
@@ -29,31 +29,14 @@ p {
   font-size: 16px;
 }
 
-.bg-secondary {
-  background: #536d4d;
-}
-
-.text-white {
-  color: #fff;
-}
-
 .content-wrapper {
-  width: 100vw;
-  height: 100vh;
+  max-width: 944px;
+  margin-top: 64px;
+  padding: 0 20px 0 20px;
 }
 
-.shadow-button {
-  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-}
-
-.shadow-link {
-  box-shadow: inset 0px 0px 12px -1px black;
-}
-
-.hero-shadow {
-  background: radial-gradient(circle at center, #fff 10%, transparent 55%, rgba(0, 0, 0, 0));
-}
-
-.rectangle {
-  background: linear-gradient(to right, #536D4D 25%, #fff 30%);
+table {
+  display: block;
+  overflow-x: scroll;
+  white-space: nowrap;
 }
