@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import Video from "./video/Video";
 import clsx from "clsx";
 import { ReactComponent as ArrowDown } from "./assets/arrowDown.svg";
-import useWindowDimensions from "./helpers";
+import useWindowDimensions from "../../heplers/helpers";
 
 const Media = () => {
   if (useWindowDimensions().width < 1024) {

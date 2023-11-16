@@ -11,6 +11,7 @@ import s5 from "./assets/5.png";
 import s6 from "./assets/6.png";
 import Description from "./description/Description";
 import clsx from "clsx";
+import useWindowDimensions from '../../heplers/helpers'
 
 const STRUCTURE = [
   {
@@ -69,39 +70,42 @@ const STRUCTURE = [
 ];
 
 const ProductInfo = () => {
-  return (
-    // <div className="h-full relative content-wrapper overflow-hidden mx-auto">
-    //   <img
-    //     src={atoms}
-    //     alt="FormPayments"
-    //     className="absolute z-0 top-14 w-[700px]"
-    //   />
-    //   <h1 className="font-bold z-10">
-    //     Lorem ipsum dolor sit amet consectetur.
-    //   </h1>
-    //   <div className="flex h-full justify-center items-center space-x-10 z-10 mt-6">
-    //     <div>
-    //       <div className={styles.imageContainer}>
-    //         <img src={herobg} alt="herobg" className={styles.herobg} />
-    //         <img src={hero} alt="hero" className={styles.hero} />
-    //         <div className={styles.imageShadow}></div>
-    //       </div>
-    //     </div>
-    //     <div className="flex flex-col justify-center items-center h-full space-y-6">
-    //       {STRUCTURE.map((elem) => (
-    //         <Description
-    //           name={elem.name}
-    //           img={elem.img}
-    //           text={elem.text}
-    //           fullText={elem.fullText}
-    //           style={elem.style}
-    //         />
-    //       ))}
-    //     </div>
-    //   </div>
-    // </div>
-    <ProductionInfoModile />
-  );
+  if (useWindowDimensions().width < 760) {
+    return <ProductionInfoModile />;
+  } else {
+    return (
+      <div className="h-full relative content-wrapper overflow-hidden mx-auto">
+        <img
+          src={atoms}
+          alt="FormPayments"
+          className="absolute z-0 top-14 w-[700px]"
+        />
+        <h1 className="font-bold z-10">
+          Lorem ipsum dolor sit amet consectetur.
+        </h1>
+        <div className="flex h-full justify-center items-center space-x-10 z-10 mt-6">
+          <div>
+            <div className={styles.imageContainer}>
+              <img src={herobg} alt="herobg" className={styles.herobg} />
+              <img src={hero} alt="hero" className={styles.hero} />
+              <div className={styles.imageShadow}></div>
+            </div>
+          </div>
+          <div className="flex flex-col justify-center items-center h-full space-y-6">
+            {STRUCTURE.map((elem) => (
+              <Description
+                name={elem.name}
+                img={elem.img}
+                text={elem.text}
+                fullText={elem.fullText}
+                style={elem.style}
+              />
+            ))}
+          </div>
+        </div>
+      </div>
+    );
+  }
 };
 
 const ProductionInfoModile = () => {
@@ -130,7 +134,11 @@ const ProductionInfoModile = () => {
         <div className="absolute right-[-140px]">
           <div className={styles.imageContainer}>
             <img src={herobg} alt="herobg" className={styles.herobg} />
-            <img src={hero} alt="hero" className={clsx(styles.hero, 'left-[40%]')} />
+            <img
+              src={hero}
+              alt="hero"
+              className={clsx(styles.hero, "left-[40%]")}
+            />
             <div className={styles.imageShadow}></div>
           </div>
         </div>
